@@ -7,6 +7,7 @@
       <router-link to="/payment">Payment</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <hr>
     <router-view/>
   </div>
 </template>
