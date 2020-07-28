@@ -1,7 +1,7 @@
 <template>
   <div class="products">
     <h1>This is a products page</h1>
-    <table v-for="item in products" :key="item.id">
+    <table v-for="item in products" :key="item.id" class="table">
       <tr>
         <td>{{item.title}}</td>
         <td>
@@ -29,3 +29,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.table {
+  margin: auto;
+}
+</style>
