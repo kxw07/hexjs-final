@@ -46,7 +46,7 @@ export default {
       }).then(res => {
         document.cookie = `token=${res.data.token}; max-age=1800; path=/`
         document.cookie = `uuid=${res.data.uuid}; max-age=1800; path=/`
-        this.$router.push('admin/products')
+        this.$router.push('/admin')
       }).catch(err => {
         this.msg = err.response.data.message
         console.log(err)

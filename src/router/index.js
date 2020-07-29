@@ -39,6 +39,33 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import(/* webpackChunkName: "about" */ '../views/admin/Dashboard.vue'),
+    children: [
+      {
+        path: 'products',
+        name: 'Products',
+        component: () => import(/* webpackChunkName: "about" */ '../views/admin/Products.vue')
+      },
+      {
+        path: 'coupons',
+        name: 'Coupons',
+        component: () => import(/* webpackChunkName: "about" */ '../views/admin/Coupons.vue')
+      },
+      {
+        path: 'orders',
+        name: 'Orders',
+        component: () => import(/* webpackChunkName: "about" */ '../views/admin/Orders.vue')
+      },
+      {
+        path: 'pictures',
+        name: 'Pictures',
+        component: () => import(/* webpackChunkName: "about" */ '../views/admin/Pictures.vue')
+      }
+    ]
   }
 ]
 
