@@ -5,7 +5,8 @@
       <router-link to="/admin/products">Admin Products</router-link> |
       <router-link to="/admin/coupons">Admin Coupons</router-link> |
       <router-link to="/admin/orders">Admin Orders</router-link> |
-      <router-link to="/admin/pictures">Admin Pictures</router-link>
+      <router-link to="/admin/pictures">Admin Pictures</router-link> |
+      <router-link to="/admin/logout">Logout</router-link>
     </div>
     <router-view/>
   </div>
