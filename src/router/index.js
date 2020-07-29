@@ -76,13 +76,6 @@ const routes = [
   }
 ]
 
-// 首頁 /
-// 產品列表 /products
-// 單一產品頁面（LV 2）/products/product
-// 購物車 /cart
-// 關於我們 /about
-// 結帳 /payment
-
 const router = new VueRouter({
   routes
 })

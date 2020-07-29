@@ -39,7 +39,7 @@ export default {
         'Content-Type': 'application/json'
       }
       this.axios({
-        url: 'https://course-ec-api.hexschool.io/api/auth/login',
+        url: `${process.env.VUE_APP_API_URL}/api/auth/login`,
         method: 'post',
         headers: headers,
         data: this.user
