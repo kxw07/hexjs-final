@@ -1,4 +1,4 @@
-# hexjs-final
+# hexjs-week6-router
 
 ## Project setup
 ```
